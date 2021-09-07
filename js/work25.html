@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ワーク</title>
+        <script>
+            window.onload = function() {
+                document.getElementById("btn").onclick = function() {
+                    var radius = document.getElementById("radius");
+                    var area = document.getElementById("area");
+                    area.value = radius.value * radius.value * Math.PI;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>半径</td>
+                <td><input type="text" id="radius" /></td>
+                <td><input type="button" id="btn" value="計算" /></td>
+            </tr>
+        </table>
+        <div>円の面積：<input type="text" id="area" /></div>
+    </body>
+</html>

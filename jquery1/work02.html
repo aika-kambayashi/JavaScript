@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>jQuery</title>
+        <meta http-equiv="Content-Script-Type" content="text/javascript" charset="UTF-8">
+        <script src="//code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#btn').on('click',function(){
+                    $("#q02").css({
+                        "color" : "#f00",
+                        "background-color" : "yellow"
+                    });
+                });
+            });
+        </script>
+        <body>
+            <button id="btn">クリック</button>
+            <p id="q02">ヘビーローテーション</p>
+        </body>
+    </head>
+</html>

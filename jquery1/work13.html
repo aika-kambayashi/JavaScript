@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>jQuery</title>
+        <meta http-equiv="Content-Script-Type" content="text/javascript" charset="UTF-8">
+        <script src="//code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#btn').on('click',function(){
+                    $("#q13").prepend("<li>前田敦子</li>").append("<li>篠田麻里子</li>");
+                });
+            });
+        </script>
+        <body>
+            <button id="btn">クリック</button>
+            <ul id="q13">
+                <li>大島優子</li>
+            </ul>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ワーク</title>
+        <script>
+            var Item = function (price, unit) {
+                this.price = price;
+                this.unit = unit;
+            };
+            Item.prototype.getTotal = function () {
+                return this.price * this.unit;
+            };
+            var data = [
+                new Item(120,3),
+                new Item(30,2),
+                new Item(80,1),
+                new Item(100,3),
+            ];
+
+            var sum = 0;
+
+            for (var key in data) {
+                sum += data[key].getTotal();
+            }
+            console.log(sum);
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

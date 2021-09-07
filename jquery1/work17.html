@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>jQuery</title>
+        <meta http-equiv="Content-Script-Type" content="text/javascript" charset="UTF-8">
+        <script src="//code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#btn').on('click',function(){
+                    $("#q17").attr("class","akb");
+                });
+            });
+        </script>
+        <style>
+            .akb {
+                color: #F00;
+            }
+        </style>
+        <body>
+            <button id="btn">クリック</button>
+            <ul id="q17">
+                <li>前田敦子</li>
+                <li>大島優子</li>
+                <li>高橋みなみ</li>
+            </ul>
+        </body>
+    </head>
+</html>

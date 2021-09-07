@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>jQuery</title>
+        <meta http-equiv="Content-Script-Type" content="text/javascript" charset="UTF-8">
+        <script src="//code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#btn').on('click',function(){
+                    $(".q16").removeAttr("class").text("xxx");
+                });
+            });
+        </script>
+        <body>
+            <button id="btn">クリック</button>
+            <p class="q16">前田敦子</a></p>
+            <p>指原莉乃</p>
+            <p class="q16">大島優子</a></p>
+            <p>山本彩</p>
+            <p class="q16">篠田麻里子</a></p>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ワーク</title>
+        <script>
+            window.onload = function() {
+                document.getElementById('start').onclick = function() {
+                    var name = "名前：" + document.getElementById('name').value + "<br/>";
+                    var age = "年齢：" + document.getElementById('age').value + "<br/>";
+                    var hobby = "趣味：" + document.getElementById('hobby').value + "<br/>";
+                    var elm = document.getElementById('target');
+                    elm.innerHTML = name + age + hobby;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table border="1">
+            <tr><th>名前</th><td><input type="text" id="name" /></td></tr>
+            <tr><th>年齢</th><td><input type="text" id="age" /></td></tr>
+            <tr><th>趣味</th><td><input type="text" id="hobby" /></td></tr>
+        </table>
+        <div><input type="button" id="start" value="スタート" /></div>
+        <div id="target"></div>
+    </body>
+</html>

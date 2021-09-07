@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ワーク</title>
+        <script>
+            window.onload = function() {
+                document.getElementById('start').onclick = function() {
+                    var msg = document.getElementById('contents').innerHTML;
+                    var output = document.getElementById('target');
+                    output.innerHTML = msg;
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div><input type="button" id="start" value="スタート" /></div>
+        <div id="contents">こんにちは</div>
+        <div id="target"></div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>ワーク</title>
+        <script>
+            window.onload = function() {
+                document.getElementById('start').onclick = function() {
+                    var msg = document.getElementById('message').value;
+                    var num = document.getElementById('loop').value;
+                    var elm = document.getElementById('result');
+                    for (var i = 0; i < num; i++) {
+                        elm.innerHTML += msg + "<br/>";
+                    }
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <div>メッセージ<input type="text" id="message" /></div>
+        <div>繰り返し回数<input type="text" id="loop" /></div>
+        <div><input type="button" id="start" value="スタート" /></div>
+        <div id="result"></div>
+    </body>
+</html>
